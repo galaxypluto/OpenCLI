@@ -24862,6 +24862,63 @@
   },
   {
     "site": "weread",
+    "name": "ai-ask",
+    "description": "Ask WeRead AI about a book resolved by title, bookId, or reader URL",
+    "access": "read",
+    "domain": "weread.qq.com",
+    "strategy": "cookie",
+    "browser": true,
+    "args": [
+      {
+        "name": "book",
+        "type": "str",
+        "required": true,
+        "positional": true,
+        "help": "Book title keyword, numeric bookId, or reader URL"
+      },
+      {
+        "name": "question",
+        "type": "str",
+        "required": true,
+        "positional": true,
+        "help": "Question to ask WeRead AI about the selected book"
+      },
+      {
+        "name": "book-rank",
+        "type": "int",
+        "default": 1,
+        "required": false,
+        "help": "Which book search result to use when book is a title keyword"
+      },
+      {
+        "name": "chapter-uid",
+        "type": "int",
+        "required": false,
+        "help": "Reader chapter UID to seed the AI context (defaults to the first known chapter, or 1)"
+      },
+      {
+        "name": "timeout",
+        "type": "int",
+        "default": 45,
+        "required": false,
+        "help": "Max seconds to wait for the AI answer (1-180)"
+      },
+      {
+        "name": "raw",
+        "type": "boolean",
+        "default": false,
+        "required": false,
+        "help": "Output structured fields instead of markdown text"
+      }
+    ],
+    "defaultFormat": "md",
+    "type": "js",
+    "modulePath": "weread/ai-ask.js",
+    "sourceFile": "weread/ai-ask.js",
+    "navigateBefore": "https://weread.qq.com"
+  },
+  {
+    "site": "weread",
     "name": "ai-outline",
     "description": "Get AI-generated outline for a book",
     "access": "read",
