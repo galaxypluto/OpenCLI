@@ -293,7 +293,7 @@ npm link
 | **linux-do** | `feed` `search` `categories` `tags` `topic` `topic-content` `user-posts` `user-topics` | 浏览器 |
 | **stackoverflow** | `hot` `search` `bounties` `unanswered` | 公开 |
 | **steam** | `top-sellers` | 公开 |
-| **weread** | `shelf` `search` `book` `highlights` `notes` `notebooks` `ranking` | 浏览器 |
+| **weread** | `shelf` `search` `book` `ai-ask` `highlights` `notes` `notebooks` `ranking` | 浏览器 |
 | **douban** | `search` `top250` `subject` `photos` `download` `marks` `reviews` `movie-hot` `book-hot` | 浏览器 |
 | **facebook** | `feed` `profile` `search` `friends` `groups` `events` `notifications` `memories` `add-friend` `join-group` | 浏览器 |
 | **google** | `news` `search` `suggest` `trends` | 公开 |

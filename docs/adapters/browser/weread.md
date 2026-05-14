@@ -9,6 +9,7 @@
 | `opencli weread shelf` | List books on your bookshelf |
 | `opencli weread search` | Search books on WeRead |
 | `opencli weread book` | View book details |
+| `opencli weread ai-ask` | Ask WeRead AI about a book resolved by title, bookId, or reader URL |
 | `opencli weread ranking` | Book rankings by category |
 | `opencli weread notebooks` | List books that have highlights or notes |
 | `opencli weread highlights` | List your highlights (underlines) in a book |
@@ -25,6 +26,9 @@ opencli weread search "三体"
 
 # View book details
 opencli weread book <book-id>
+
+# Ask WeRead AI about a book
+opencli weread ai-ask "史记" "请用一句话概括这本书"
 
 # Book rankings
 opencli weread ranking --limit 10
@@ -46,3 +50,4 @@ opencli weread shelf -f json
 
 - Chrome running and **logged into** weread.qq.com
 - [Browser Bridge extension](/guide/browser-bridge) installed
+- `ai-ask` depends on WeRead's AI 问书 availability for the selected book/account
